@@ -22,3 +22,18 @@ si el resultado es positivo, negativo o cero.
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+# Números por Consola
+num_1 = float(input('Ingrese el primer número:\n')) 
+num_2 = float(input('Ingrese el Segundo número:\n')) 
+
+# Resta
+rest = num_1 - num_2
+
+# Condicionales 
+if rest > 0:
+    print('El resultado de la resta es positivo')
+elif rest < 0:
+    print('El resultado de la resta es negativo')
+else:
+    print('El resultado de la resta es cero')
