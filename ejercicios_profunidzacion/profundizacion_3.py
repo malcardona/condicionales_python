@@ -84,5 +84,5 @@ else:
             temp_1 = num_2
             temp_2 = num_1
 
-print('La Temperatura máxima es {}°C y la mínima es {}°C'.format(temp_1, temp_2))
-print('La Temperatura Promedio es {}°C'.format(temp_avg))
+    print('La Temperatura máxima es {}°C y la mínima es {}°C'.format(temp_1, temp_2))
+    print('La Temperatura Promedio es {}°C'.format(temp_avg))
