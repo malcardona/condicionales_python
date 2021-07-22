@@ -42,9 +42,11 @@ temp_avg = (num_1 + num_2 + num_3) / 3
 
 # Ordenar Temperaturas
 
+    # Temperaturas iguales
 if num_1 == num_2 and num_1 == num_3:
     print('Todas las Temperatutas son iguales')
 
+    # Dos temperaturas Iguales
 elif (num_1 == num_2 or num_1 == num_3):
     if num_2 >  num_3:
         temp_1 = num_2
@@ -65,6 +67,7 @@ elif num_2 == num_3:
     print('La Temperatura máxima es {}°C y la mínima es {}°C'.format(temp_1, temp_2))
     print('La Temperatura Promedio es {}°C'.format(temp_avg))
 
+    # Todas las temperaturas diferentes
 else:
     if num_1 > num_2:
         if num_1 < num_3:
