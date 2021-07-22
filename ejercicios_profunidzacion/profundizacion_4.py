@@ -113,3 +113,71 @@ if ord == '1':
                 p_2 = texto_3
                 p_2 = texto_1
         print('{} > {} > {}'.format(p_1, p_2, p_3))
+
+
+# Cantidad de Palabras
+if ord == '2':
+    print('Se ordenaran las palabras por cantidad de letras')
+
+    # Si todas las Palabras son iguales
+    if texto_1 == texto_2 and texto_2 == texto_3:
+       print('Todas las palabras son iguales')
+    
+    # Longitud de palabras
+    len_texto_1 = int(len(texto_1))
+    len_texto_2 = int(len(texto_2))
+    len_texto_3 = int(len(texto_3))
+
+    # Si dos palabras son Iguales
+    if (len_texto_1 == len_texto_2) or (len_texto_1 == len_texto_3):
+        if len_texto_2 > len_texto_3:
+            p_1 = texto_2
+            p_2 = texto_1
+            p_3 = texto_3
+        else:
+            p_1 = texto_3
+            p_2 = texto_1
+            p_3 = texto_2
+        print('{} ({}) > {} ({}) > {} ({})'.format(p_1, len_texto_1, p_2, len_texto_2, p_3, len_texto_3))
+
+    elif len_texto_2 == len_texto_3:
+        if len_texto_1 > len_texto_3:
+            p_1 = texto_1
+            p_2 = texto_2
+            p_3 = texto_3
+        else:
+            p_1 = texto_3
+            p_2 = texto_2
+            p_2 = texto_1
+        print('{} ({}) > {} ({}) > {} ({})'.format(p_1, len_texto_1, p_2, len_texto_2, p_3, len_texto_3))
+
+    # Todas las palabras diferentes
+    else:
+        if len_texto_1 > len_texto_2:
+            if len_texto_1 < len_texto_3:
+                p_1 = texto_3
+                p_2 = texto_1
+                p_3 = texto_2
+            elif len_texto_2 > len_texto_3:
+                p_1 = texto_1
+                p_2 = texto_2
+                p_3 = texto_3
+        elif len_texto_2 > len_texto_3:
+            if len_texto_3 > len_texto_1:
+                p_1 = texto_2
+                p_2 = texto_3
+                p_3 = texto_1
+            else:
+                p_1 = texto_2
+                p_2 = texto_1
+                p_3 = texto_3
+        else:
+            if len_texto_1 > len_texto_3:
+                p_1 = texto_2
+                p_2 = texto_1
+                p_2 = texto_3
+            else:
+                p_1 = texto_2
+                p_2 = texto_3
+                p_2 = texto_1
+        print('{} ({}) > {} ({}) > {} ({})'.format(p_1, len_texto_1, p_2, len_texto_2, p_3, len_texto_3))
