@@ -80,7 +80,7 @@ if ord == '1':
         else:
             p_1 = texto_3
             p_2 = texto_2
-            p_2 = texto_1
+            p_3 = texto_1
         print('{} > {} > {}'.format(p_1, p_2, p_3))
 
     # Todas las palabras diferentes
@@ -107,11 +107,11 @@ if ord == '1':
             if texto_1 > texto_3:
                 p_1 = texto_2
                 p_2 = texto_1
-                p_2 = texto_3
+                p_3 = texto_3
             else:
                 p_1 = texto_2
                 p_2 = texto_3
-                p_2 = texto_1
+                p_3 = texto_1
         print('{} > {} > {}'.format(p_1, p_2, p_3))
 
 
@@ -134,22 +134,35 @@ if ord == '2':
             p_1 = texto_2
             p_2 = texto_1
             p_3 = texto_3
+            l_p1 = int(len(p_1))
+            l_p2 = int(len(p_2))
+            l_p3 = int(len(p_3))
+            
         else:
             p_1 = texto_3
             p_2 = texto_1
             p_3 = texto_2
-        print('{} ({}) > {} ({}) > {} ({})'.format(p_1, len_texto_1, p_2, len_texto_2, p_3, len_texto_3))
+            l_p1 = int(len(p_1))
+            l_p2 = int(len(p_2))
+            l_p3 = int(len(p_3))
+        print('{} ({}) > {} ({}) > {} ({})'.format(p_1, l_p1, p_2, l_p2, p_3, l_p3))
 
     elif len_texto_2 == len_texto_3:
         if len_texto_1 > len_texto_3:
             p_1 = texto_1
             p_2 = texto_2
             p_3 = texto_3
+            l_p1 = int(len(p_1))
+            l_p2 = int(len(p_2))
+            l_p3 = int(len(p_3))
         else:
             p_1 = texto_3
             p_2 = texto_2
-            p_2 = texto_1
-        print('{} ({}) > {} ({}) > {} ({})'.format(p_1, len_texto_1, p_2, len_texto_2, p_3, len_texto_3))
+            p_3 = texto_1
+            l_p1 = int(len(p_1))
+            l_p2 = int(len(p_2))
+            l_p3 = int(len(p_3))
+        print('{} ({}) > {} ({}) > {} ({})'.format(p_1, l_p1, p_2, l_p2, p_3, l_p3))
 
     # Todas las palabras diferentes
     else:
@@ -158,26 +171,44 @@ if ord == '2':
                 p_1 = texto_3
                 p_2 = texto_1
                 p_3 = texto_2
+                l_p1 = int(len(p_1))
+                l_p2 = int(len(p_2))
+                l_p3 = int(len(p_3))
             elif len_texto_2 > len_texto_3:
                 p_1 = texto_1
                 p_2 = texto_2
                 p_3 = texto_3
+                l_p1 = int(len(p_1))
+                l_p2 = int(len(p_2))
+                l_p3 = int(len(p_3))
         elif len_texto_2 > len_texto_3:
             if len_texto_3 > len_texto_1:
                 p_1 = texto_2
                 p_2 = texto_3
                 p_3 = texto_1
+                l_p1 = int(len(p_1))
+                l_p2 = int(len(p_2))
+                l_p3 = int(len(p_3))
             else:
                 p_1 = texto_2
                 p_2 = texto_1
                 p_3 = texto_3
+                l_p1 = int(len(p_1))
+                l_p2 = int(len(p_2))
+                l_p3 = int(len(p_3))
         else:
             if len_texto_1 > len_texto_3:
                 p_1 = texto_2
                 p_2 = texto_1
-                p_2 = texto_3
+                p_3 = texto_3
+                l_p1 = int(len(p_1))
+                l_p2 = int(len(p_2))
+                l_p3 = int(len(p_3))
             else:
                 p_1 = texto_2
                 p_2 = texto_3
-                p_2 = texto_1
-        print('{} ({}) > {} ({}) > {} ({})'.format(p_1, len_texto_1, p_2, len_texto_2, p_3, len_texto_3))
+                p_3 = texto_1
+                l_p1 = int(len(p_1))
+                l_p2 = int(len(p_2))
+                l_p3 = int(len(p_3))
+        print('{} ({}) > {} ({}) > {} ({})'.format(p_1, l_p1, p_2, l_p2, p_3, l_p3))
