@@ -38,7 +38,7 @@ elif numero_1 < 0:
     print('El primer número ^{}^ es negativo'.format(numero_1))
 
 else:
-    print('E Primer número es igual a cero!')
+    print('El Primer número es igual a cero!')
 
 # Verifique si el numero_1 es mayor a 0 y menor a 100
 # Imprima en pantalla si se cumple o no la condición
