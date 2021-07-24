@@ -52,7 +52,7 @@ else:
 # es mayor a -2
 # Imprima en pantalla si se cumple o no la condición
 
-if (numero_1 > 10) or (numero_2 > -2):
+if (numero_1 < 10) or (numero_2 > -2):
     print('Se cumple que: {} > 10 o {} > -2'.format(numero_1, numero_2))
 else:
     print('No se cumple que: {} > 10 o {} > -2'.format(numero_1, numero_2))
